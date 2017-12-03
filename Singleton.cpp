@@ -1,4 +1,4 @@
-#include "Singleton.h"
+﻿#include "Singleton.h"
 #include "iostream"
 #include <fstream>
 
@@ -27,7 +27,7 @@ int Singleton::getNext()
 {
 	// Jei failas baiges, grazina NULL
 	if (in.eof())
-		return NULL;
+		return NULL;
 
 	// Pasiima a
 	int a;
@@ -128,13 +128,13 @@ void Singleton::negativeGrades(int A[100][100], int n, int m){
 
 void Singleton::writeToLogFile()
 {
-	int A[100][100];
+	int A[100][100];
 	int n=getNext(), m=getNext();
 
 	fillWithNull(A);
 	inputArray(A, n, m);
 	tenFunction(A, n, m);
-	negativeGrades(A, n, m);
-	printArray(A, n, m);
+	negativeGrades(A, n, m);
+	printArray(A, n, m);
 }
 
